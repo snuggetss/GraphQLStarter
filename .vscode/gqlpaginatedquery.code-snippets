@@ -1,0 +1,30 @@
+{
+    "GraphQL Paginated Query": {
+        "scope": "javascript",
+        "prefix": "gqlpagquery",
+        "body": [
+            "gql`",
+            "query ${1:query_name} {",
+            "\tuiapi {",
+            "\t\tquery {",
+            "\t\t\t${2:sObjectApiName} {",
+            "\t\t\t\tedges {",
+            "\t\t\t\t\tnode {",
+            "\t\t\t\t\t\tId$0",
+            "\t\t\t\t\t}",
+            "\t\t\t\t\tpageInfo {",
+            "\t\t\t\t\t\tendCursor",
+            "\t\t\t\t\t\thasNextPage",
+            "\t\t\t\t\t\thasPreviousPage",
+            "\t\t\t\t\t}",
+            "\t\t\t\t\ttotalCount",
+            "\t\t\t\t\tpageResultCount",
+            "\t\t\t\t}",
+            "\t\t\t}",
+            "\t\t}",
+            "\t}",
+            "}",
+            "`"
+        ]
+    }
+}

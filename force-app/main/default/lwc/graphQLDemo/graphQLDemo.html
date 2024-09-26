@@ -1,0 +1,40 @@
+<template>
+    <lightning-card>
+
+        <!-- loading spinner -->
+        <template lwc:if={isLoading}>
+            <lightning-spinner alternative-text="loading"></lightning-spinner>
+        </template>
+
+        <!-- card body  -->
+        <div class="slds-var-p-around_medium">
+
+            <lightning-layout vertical-align="end" class="slds-var-p-around_small">
+                <lightning-layout-item size="11">
+                    <lightning-input label="Search Accounts/Contacts By Name" value={searchKey} onchange={handleSearchKeyChange}></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="1" class="slds-var-p-left_small">
+                    <lightning-button-icon icon-name="utility:refresh" onclick={refresh}></lightning-button-icon>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <!-- error message -->
+            <template lwc:if={errorMsg}>
+                <p class="error">{errorMsg}</p>
+            </template>
+            
+            <lightning-tabset>
+                <lightning-tab label="Accounts">
+                    <c-graph-q-l-accounts-tab accounts={accounts}></c-graph-q-l-accounts-tab>
+                </lightning-tab>
+                
+                <lightning-tab label="Contacts">
+                    <c-graph-q-l-contacts-tab contacts={contacts}></c-graph-q-l-contacts-tab>
+                </lightning-tab>
+            </lightning-tabset>
+
+            <c-graph-q-l-page-controls></c-graph-q-l-page-controls>
+
+        </div>
+    </lightning-card>
+</template>

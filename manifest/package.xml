@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Account.Active__c</members>
+		<members>Account.BestAccountFriend__c</members>
+		<members>Account.BestFriend__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>graphQLAccountsTab</members>
+		<members>graphQLContactsTab</members>
+		<members>graphQLDemo</members>
+		<members>graphQLDemoTab</members>
+		<members>graphQLPageControls</members>
+		<members>graphQLUtils</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<version>60.0</version>
+</Package>

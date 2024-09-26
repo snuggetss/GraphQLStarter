@@ -1,0 +1,23 @@
+{
+    "GraphQL Query": {
+        "scope": "javascript",
+        "prefix": "gqlquery",
+        "body": [
+            "gql`",
+            "query ${1:query_name} {",
+            "\tuiapi {",
+            "\t\tquery {",
+            "\t\t\t${2:sObjectApiName} {",
+            "\t\t\t\tedges {",
+            "\t\t\t\t\tnode {",
+            "\t\t\t\t\t\tId$0",
+            "\t\t\t\t\t}",
+            "\t\t\t\t}",
+            "\t\t\t}",
+            "\t\t}",
+            "\t}",
+            "}",
+            "`"
+        ]
+    }
+}

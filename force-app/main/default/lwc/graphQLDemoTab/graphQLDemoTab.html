@@ -1,0 +1,15 @@
+<template>
+    <!-- <lightning-tab label={label}> -->
+        <template lwc:if={hasData}>
+
+            <!-- data table goes here  -->
+            <slot></slot>
+
+        </template>
+        <template lwc:else>
+            <div class="slds-align_absolute-center">
+                <p><b><i>No {label} Found</i></b></p>
+            </div>
+        </template>
+    <!-- </lightning-tab> -->
+</template>
