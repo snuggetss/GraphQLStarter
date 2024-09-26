@@ -7,6 +7,10 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>Home_Page_Default</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
 		<members>graphQLAccountsTab</members>
 		<members>graphQLContactsTab</members>
 		<members>graphQLDemo</members>
